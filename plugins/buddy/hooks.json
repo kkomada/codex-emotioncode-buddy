@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "ROOT=\"$PWD\"; while [ \"$ROOT\" != \"/\" ] && [ ! -f \"$ROOT/plugins/buddy/scripts/buddy-state.js\" ]; do ROOT=\"$(dirname \"$ROOT\")\"; done; SCRIPT=\"$ROOT/plugins/buddy/scripts/buddy-state.js\"; if [ ! -f \"$SCRIPT\" ] && [ -f \"$HOME/plugins/buddy/scripts/buddy-state.js\" ]; then SCRIPT=\"$HOME/plugins/buddy/scripts/buddy-state.js\"; fi; node \"$SCRIPT\" hook write"
+            "command": "ROOT=\"$PWD\"; while [ \"$ROOT\" != \"/\" ] && [ ! -f \"$ROOT/plugins/buddy/scripts/buddy-state.js\" ]; do ROOT=\"$(dirname \"$ROOT\")\"; done; SCRIPT=\"$ROOT/plugins/buddy/scripts/buddy-state.js\"; if [ ! -f \"$SCRIPT\" ] && [ -f \"$HOME/.codex/plugins/buddy/scripts/buddy-state.js\" ]; then SCRIPT=\"$HOME/.codex/plugins/buddy/scripts/buddy-state.js\"; fi; node \"$SCRIPT\" hook write"
           }
         ]
       }

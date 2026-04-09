@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 HOME = Path.home()
-TARGET_PLUGIN_DIR = HOME / "plugins" / "buddy"
+TARGET_PLUGIN_DIR = HOME / ".codex" / "plugins" / "buddy"
 TARGET_MARKETPLACE = HOME / ".agents" / "plugins" / "marketplace.json"
 
 

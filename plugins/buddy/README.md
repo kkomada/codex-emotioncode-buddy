@@ -12,9 +12,9 @@ Buddy local plugin experiment.
 
 Home-global install layout:
 
-- `~/plugins/buddy`
+- `~/.codex/plugins/buddy`
 - `~/.agents/plugins/marketplace.json`
 
-The command and hook paths first look for `plugins/buddy` in the current project tree, then fall back to `~/plugins/buddy`.
+The command and hook paths first look for `plugins/buddy` in the current project tree, then fall back to `~/.codex/plugins/buddy`.
 
 이 디렉터리는 로컬 plugin/marketplace 형식 실험용 산출물 보관용이다.

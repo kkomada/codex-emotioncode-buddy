@@ -29,7 +29,7 @@ cd codex-buddy-plugin
 
 설치 결과:
 
-- 플러그인: `~/plugins/buddy`
+- 플러그인: `~/.codex/plugins/buddy`
 - 마켓플레이스 등록: `~/.agents/plugins/marketplace.json`
 
 설치가 곧 `/buddy` 활성화를 의미하지는 않는다. 현재 공개 Codex CLI에서는 이 로컬 플러그인이 slash command로 노출되지 않았다.
@@ -43,9 +43,9 @@ cd codex-buddy-plugin
 ## 수동 확인
 
 ```bash
-node ~/plugins/buddy/scripts/buddy-state.js status
-node ~/plugins/buddy/scripts/buddy-state.js on
-node ~/plugins/buddy/scripts/buddy-state.js roast
+node ~/.codex/plugins/buddy/scripts/buddy-state.js status
+node ~/.codex/plugins/buddy/scripts/buddy-state.js on
+node ~/.codex/plugins/buddy/scripts/buddy-state.js roast
 ```
 
 또는 셸에서 별도 alias/function을 잡아 `buddy on`처럼 사용할 수 있다.

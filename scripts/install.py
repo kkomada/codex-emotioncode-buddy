@@ -8,7 +8,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SOURCE_PLUGIN_DIR = REPO_ROOT / "plugins" / "buddy"
 HOME = Path.home()
-TARGET_PLUGIN_DIR = HOME / "plugins" / "buddy"
+TARGET_PLUGIN_DIR = HOME / ".codex" / "plugins" / "buddy"
 TARGET_MARKETPLACE = HOME / ".agents" / "plugins" / "marketplace.json"
 
 
@@ -16,7 +16,7 @@ PLUGIN_ENTRY = {
     "name": "buddy",
     "source": {
         "source": "local",
-        "path": "./plugins/buddy",
+        "path": "./.codex/plugins/buddy",
     },
     "policy": {
         "installation": "INSTALLED_BY_DEFAULT",

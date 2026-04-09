@@ -38,7 +38,7 @@ Supported forms:
 Execution rule:
 
 ```bash
-ROOT="$PWD"; while [ "$ROOT" != "/" ] && [ ! -f "$ROOT/plugins/buddy/scripts/buddy-state.js" ]; do ROOT="$(dirname "$ROOT")"; done; SCRIPT="$ROOT/plugins/buddy/scripts/buddy-state.js"; if [ ! -f "$SCRIPT" ] && [ -f "$HOME/plugins/buddy/scripts/buddy-state.js" ]; then SCRIPT="$HOME/plugins/buddy/scripts/buddy-state.js"; fi; node "$SCRIPT" <subcommand>
+ROOT="$PWD"; while [ "$ROOT" != "/" ] && [ ! -f "$ROOT/plugins/buddy/scripts/buddy-state.js" ]; do ROOT="$(dirname "$ROOT")"; done; SCRIPT="$ROOT/plugins/buddy/scripts/buddy-state.js"; if [ ! -f "$SCRIPT" ] && [ -f "$HOME/.codex/plugins/buddy/scripts/buddy-state.js" ]; then SCRIPT="$HOME/.codex/plugins/buddy/scripts/buddy-state.js"; fi; node "$SCRIPT" <subcommand>
 ```
 
 Subcommand mapping:
@@ -55,7 +55,7 @@ Subcommand mapping:
 If the user asks for something outside this set, run:
 
 ```bash
-ROOT="$PWD"; while [ "$ROOT" != "/" ] && [ ! -f "$ROOT/plugins/buddy/scripts/buddy-state.js" ]; do ROOT="$(dirname "$ROOT")"; done; SCRIPT="$ROOT/plugins/buddy/scripts/buddy-state.js"; if [ ! -f "$SCRIPT" ] && [ -f "$HOME/plugins/buddy/scripts/buddy-state.js" ]; then SCRIPT="$HOME/plugins/buddy/scripts/buddy-state.js"; fi; node "$SCRIPT" help
+ROOT="$PWD"; while [ "$ROOT" != "/" ] && [ ! -f "$ROOT/plugins/buddy/scripts/buddy-state.js" ]; do ROOT="$(dirname "$ROOT")"; done; SCRIPT="$ROOT/plugins/buddy/scripts/buddy-state.js"; if [ ! -f "$SCRIPT" ] && [ -f "$HOME/.codex/plugins/buddy/scripts/buddy-state.js" ]; then SCRIPT="$HOME/.codex/plugins/buddy/scripts/buddy-state.js"; fi; node "$SCRIPT" help
 ```
 
 and explain that the current Buddy MVP supports command-driven interaction only.
