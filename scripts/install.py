@@ -19,7 +19,7 @@ PLUGIN_ENTRY = {
         "path": "./plugins/buddy",
     },
     "policy": {
-        "installation": "AVAILABLE",
+        "installation": "INSTALLED_BY_DEFAULT",
         "authentication": "ON_INSTALL",
     },
     "category": "Productivity",
