@@ -1,0 +1,40 @@
+{
+  "name": "buddy",
+  "version": "0.1.0",
+  "description": "April Fools style Buddy companion for Codex slash commands.",
+  "author": {
+    "name": "devgolpeumon",
+    "email": "devgolpeumon@example.com",
+    "url": "https://github.com/devgolpeumon"
+  },
+  "homepage": "https://github.com/devgolpeumon/codex-buddy-plugin",
+  "repository": "https://github.com/devgolpeumon/codex-buddy-plugin",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "buddy",
+    "terminal",
+    "fun"
+  ],
+  "hooks": "./hooks.json",
+  "interface": {
+    "displayName": "Buddy",
+    "shortDescription": "Adds a sarcastic terminal buddy with local progression.",
+    "longDescription": "Buddy adds a playful April Fools style companion to Codex with slash-command controls, local state, ASCII moods, and lightweight hook-based stat reactions.",
+    "developerName": "devgolpeumon",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Local State"
+    ],
+    "websiteURL": "https://github.com/devgolpeumon/codex-buddy-plugin",
+    "privacyPolicyURL": "https://github.com/devgolpeumon/codex-buddy-plugin",
+    "termsOfServiceURL": "https://github.com/devgolpeumon/codex-buddy-plugin",
+    "defaultPrompt": [
+      "/buddy on",
+      "/buddy status",
+      "/buddy roast"
+    ],
+    "brandColor": "#14B8A6"
+  }
+}
